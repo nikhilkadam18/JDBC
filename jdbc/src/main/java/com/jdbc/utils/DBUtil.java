@@ -12,7 +12,8 @@ public class DBUtil {
 			// 2. Establish the connection
 			con = DriverManager.getConnection("jdbc:mySQL://localhost:3306/btm", "root", "admin");
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
+			System.err.println("Error while connecting DATABASE");
 		}
 		return con;
 	}
